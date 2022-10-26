@@ -103,6 +103,7 @@ void MainClass::Clusterize(int arr[10][4], int numberOfClusters)
 		clusters.push_back(clus);
 	}
 
+	//Add the remaining points
 	for (int i = numberOfClusters; i < 10; i++)
 	{
 		int mean = INT_MAX;
