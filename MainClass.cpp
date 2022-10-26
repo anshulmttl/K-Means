@@ -3,7 +3,8 @@
 int MainClass::EuclideanDistance(Point p1, Point p2)
 {
 	int distanceSquare = 0;
-
+	
+	// For now consiering only 4D point
 	for (int i = 0; i < 4; i++)
 	{
 		int coor1 = p1.GetCoordinate(i);
