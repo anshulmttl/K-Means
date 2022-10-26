@@ -41,17 +41,15 @@ void Cluster::AddPoint(Point* point)
 void Cluster::RemovePoint(Point* point)
 {
 	vector<Point*>::iterator it = points.begin();
-	bool bPointFound = false;
 	for (; it != points.end(); it++)
 	{
 		if (*it == point)
 		{
-			bPointFound = true;
 			break;
 		}
 	}
 
-	if(bPointFound)
+	if(it != points.end())
 		points.erase(it);
 
 	CalculateMean();
